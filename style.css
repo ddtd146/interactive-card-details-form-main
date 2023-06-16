@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    min-height: 100vh;
+
+}
+
+.wrapper{
+    position: relative;
+    display: flex;
+    width: 889px;
+    height: 439px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 9px 1px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.wrapper > img{
+    width: 30%;
+    height: 100%;
+}
+
+.form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardholder-name, .card-number{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 1.6;
+}
+textarea{
+    text-transform: uppercase;
+    resize: none;
+    outline: none;
+    border: 0.5px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+    line-height: 2.4;
+    font-size: 16px;
+    padding-left: 10px;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+textarea::placeholder{
+
+    color: hsl(270, 3%, 87%);
+}
+
+.exp-cvc{
+    display: flex;
+    width: 300px;
+}
+
+.exp-date{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.exp-input{
+    display: flex;
+    align-items: center;
+}
+
+#exp-month, #exp-year{
+    margin-right: 10px;
+    width: 60px;
+}
+
+.cvc{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.front-card, .back-card{
+    position: absolute;
+    width: 235px;
+    height: 130px;
+    border-radius: 7px;
+    box-shadow: rgba(17, 12, 46, 0.24) 48px 0px 100px 0px;
+    color:  hsl(270, 3%, 87%);
+    
+}
+
+.front-card{
+    background-image: URL('./images/bg-card-front.png');
+    background-size: cover;
+    left:90px;
+    top:70px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+
+.card-logo{
+    width: 50px;
+    height: 28px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.owner-name{
+    text-transform: uppercase;
+}
+.card-number-display{
+    white-space: pre;
+    font-size: 16px;
+    margin-top: 25px;
+    letter-spacing: 0.9px;
+}
+.owner-exp{
+    white-space: pre;
+    font-size: 9px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.exp-date-display{
+    white-space: pre;
+    position: absolute;
+    right: 20px;
+}
+.back-card{
+    background-image: URL('./images/bg-card-back.png');
+    background-size: cover;
+    left: 144px;
+    top: 240px;
+}
+
+.cvc-number{
+    white-space: pre;
+    position: absolute;
+    font-size: 9px;
+    letter-spacing: 1px;
+    top:58px;
+    right: 30px;
+}
+
+.button{
+    background-color: hsl(278, 68%, 11%); 
+    width: 300px;
+    height: 40px;
+    border-radius:7px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.error-msg{
+    width: 300px;
+    font-size: 9px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+#err-msg-name, #err-msg-num, #err-msg-date, #err-msg-cvc{
+    transition: color 0.2s ease-in-out;
+    color: transparent;
+}
+
+
+.complete-logo{
+    width: 10%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.thank-you{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 0.9px;
+    margin-bottom: 10px;
+    color: hsl(278, 68%, 11%);
+}
+
+.announcement{
+    font-size: 13px;
+    color: hsl(279, 6%, 55%);
+    margin-bottom: 27px;
+}

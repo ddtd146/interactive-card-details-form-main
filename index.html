@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <img src="./images/bg-main-desktop.png" alt="Background">
+    <div class="form">
+      <div class="cardholder-name">
+        <label for = "cardholder-name-area"> Cardholder Name </label>
+        <textarea id = "cardholder-name-area" placeholder="E.g. Jane Appleseed" rows = "1"></textarea>
+      </div>
+      <div class="error-msg" id = "err-msg-name">Cant be blank</div>
+      <div class = "card-number">
+        <label for = "card-number-area"> Card Number </label>
+        <textarea id = "card-number-area" placeholder = "E.g. 1234 5678 9123 0000" rows = "1" maxlength = "19"></textarea>
+      </div>
+      <div class="error-msg" id = "err-msg-num">Cant be blank</div>
+      <div class = "exp-cvc">
+        <div class = "exp-date">
+          <label for = "exp-month">Exp. Date(MM/YY)</label>
+          <div class = "exp-input"> 
+            <textarea id ="exp-month" placeholder = "MM" rows="1" maxlength = "2"></textarea>
+            <textarea  id = "exp-year" placeholder = "YY" rows="1" maxlength = "2"></textarea>
+          </div>
+          <div class="error-msg" id = "err-msg-date">Cant be blank</div>
+        </div>
+        <div class="cvc">
+          <label for = "cvc-num">CVC</label>
+          <textarea id ="cvc-num" placeholder="E.g.123" maxlength = "3" rows="1"></textarea>
+          <div class="error-msg" id = "err-msg-cvc">Cant be blank</div>
+          </div>
+      </div>
+      <button class = "button" >
+        Confirm
+      </button>
+    </div>
+    <div class="front-card">
+      <div class = "card-logo">
+        <img src="./images/card-logo.svg" alt="Logo">
+      </div>
+      <div class="card-number-display">0000 0000 0000 0000</div>
+      <div class = "owner-exp">
+        <div class="owner-name">Jane Appleseed</div>
+        <div class = "exp-date-display"> 00/00</div>
+      </div>
+    </div>
+    <div class="back-card">
+      <div class = "cvc-number">000</div>
+    </div>
+  </div>
+  <script src = "app.js"></script>
+</body>
+
+</html>
